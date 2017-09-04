@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="cak">
+    <title>列表布局</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <style>
+        body,
+        html {
+            background-color: rgb(73, 74, 95);
+            color: rgb(213, 214, 226);
+            box-sizing: border-box;
+            font-weight: 500;
+        }
+
+        header {
+            font-size: 16.8px;
+            padding: 16.8px 0;
+        }
+        .list-group{
+            color: rgb(51, 51, 51);
+        }
+
+        .li-boder {
+            border: 12px solid rgb(221, 221, 221);
+        }
+
+        .li-boder:hover {
+            border-color: rgb(213, 214, 226);
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+        <header class="btn-pack">
+            <strong>显示为：</strong>
+            <div class="btn-group">
+                <button class="btn btn-default btn-sm"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> 列表布局</button>
+                <button class="btn btn-default btn-sm"><span class="glyphicon glyphicon-th" aria-hidden="true"></span> 网格布局</button>
+            </div>
+        </header>
+        <div class="list-group">
+            <div class="list-group-item li-boder">
+                <img src="imgs/fff.png" alt="fff">
+                <div>
+                    <h3>标题</h3>
+                    <p>随便写点什么产品描述信息，使用bootstrap的栅格系统来布局，尽管不用好像也不影响效果</p>
+                    <div class="col-xs-12 col-md-6">
+                        <p>$21.00</p>
+                        <button class="btn btn-success">添加到购物车</button>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group-item">2</div>
+            <div class="list-group-item">3</div>
+            <div class="list-group-item">4</div>
+            <div class="list-group-item">5</div>
+            <div class="list-group-item">6</div>
+        </div>
+    </main>
+</body>
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</html>
